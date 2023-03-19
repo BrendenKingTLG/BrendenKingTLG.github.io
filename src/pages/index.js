@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Brenden King's Portfolio Website</title>
         <meta name="description" content="Brenden King's Portfolio Website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/development.svg" />
