@@ -58,9 +58,6 @@ li a:hover {
 }
 
 img {
-  height: 60px;
-}
-
-#python {
-  viewBox: ''
+  height: 3em;
+  margin: 1em;
 }
