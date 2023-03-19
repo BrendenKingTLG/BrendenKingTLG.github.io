@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import { AiFillLinkedin } from 'react-icons/ai'
-import { DiJsBadge, DiPython, DiJava, DiAws, DiMongodb} from "react-icons/di"
-import { FcLinux } from "react-icons/fc"
+
 
 export default function Home() {
   return (
