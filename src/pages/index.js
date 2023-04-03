@@ -131,7 +131,7 @@ export default function Home() {
           </section>
           <section id="resume">
             <h2 className="text-6xl font-bold text-center mt-3">Resume</h2>
-            <center className=" px-6">
+            <center className="">
               <div className="App">
                 <img src={resume1.src} alt="" />
                 <img src={resume2.src} alt="" />
