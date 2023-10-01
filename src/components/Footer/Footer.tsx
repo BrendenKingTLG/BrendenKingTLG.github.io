@@ -1,4 +1,3 @@
-import Container from "react-bootstrap/Container";
 import { SiLinkedin, SiGithub } from "react-icons/si";
 import "./Footer.css";
 
