@@ -1,0 +1,13 @@
+.aboutContainer {
+    padding-top: 3em;
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center
+}
+
+.textContainer {
+    padding: 2em;
+    padding-left: 3em;
+}
