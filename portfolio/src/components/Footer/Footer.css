@@ -1,0 +1,17 @@
+.footerContainer {
+    background-color: rgb(61, 61, 61);
+    text-align: center;
+    color: white;
+}
+
+.footerContainer > * {
+    padding: .5em;
+}
+
+span {
+    padding-right: 1em;
+}
+
+a.footerLinks {
+    color: white;
+}
