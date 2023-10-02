@@ -10,7 +10,6 @@ export default function Projects() {
         <h3>Projects</h3>
         <Figure>
           <a href="https://brendenkingtlg.github.io/examplecompanyapp/">
-            {" "}
             <Figure.Image
               width={171}
               height={180}
