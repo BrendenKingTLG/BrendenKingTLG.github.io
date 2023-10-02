@@ -36,6 +36,19 @@ export default function Projects() {
             <strong>Web dev concepts portfolio</strong>
           </Figure.Caption>
         </Figure>
+        <Figure>
+          <a href="https://github.com/BrendenKingTLG/flask-api">
+            <Figure.Image
+              width={171}
+              height={180}
+              alt="171x180"
+              src="python-app.png"
+            />
+          </a>
+          <Figure.Caption>
+            <strong>Flask API with web view</strong>
+          </Figure.Caption>
+        </Figure>
       </section>
     </Container>
   );
