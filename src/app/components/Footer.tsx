@@ -1,3 +1,5 @@
+import { BiLogoLinkedinSquare, BiLogoGithub } from "react-icons/bi";
+
 export default function Footer() {
   return (
     <footer className="relative bg-gray-300 pt-8 pb-6">
@@ -24,20 +26,20 @@ export default function Footer() {
         <div className="flex flex-wrap">
           <div className="w-full lg:w-6/12 px-4">
             <h4 className="text-3xl font-semibold">Connect with me!</h4>
-            <div className="mt-6">
+            <div className="mt-6 flex flex-row">
               <a
-                className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-blue-400 shadow-lg font-normal h-14 w-14 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
                 href="https://linkedin.com/in/brenden-king-swe"
               >
-                <i className="flex fab fa-linkedin"></i>
+                <BiLogoLinkedinSquare size={40} />
               </a>
               <a
-                className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-gray-900 shadow-lg font-normal  flex h-14 w-14 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
                 href="https://github.com/BrendenKingTLG"
               >
-                <i className="flex fab fa-github"></i>
+                <BiLogoGithub size={40} />
               </a>
             </div>
           </div>
