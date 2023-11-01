@@ -55,7 +55,7 @@ export default function Resume() {
             </div>
             <div
               id="about"
-              className="flex justify-center shadow-xl px-5 py-5 bg-white text-lg"
+              className="flex justify-center shadow-xl px-5 py-5 bg-white text-lg text-black"
             >
               <p>
                 As a Mid-Level Software Developer at aqua IT, I work with a team
@@ -80,7 +80,7 @@ export default function Resume() {
                 <BiSolidData size={50} />
               </div>
             </div>
-            <div className="mx-auto max-w-7xl px-6 lg:px-8 py-3 bg-white">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8 py-3 bg-white text-black">
               <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
                 Systems and Server Management/Architecture
               </h2>
@@ -93,7 +93,7 @@ export default function Resume() {
                 <BiLogoAws size={50} />
               </div>
             </div>
-            <div className="bg-white text-lg pt-6" id="resume">
+            <div className="bg-white text-lg pt-6 text-black" id="resume">
               <h2 className=" text-4xl text-center">Resume</h2>
               <ul className="px-3 py-3">
                 <li
@@ -259,7 +259,7 @@ export default function Resume() {
                 </a>
               </div>
             </div>
-            <div className="py-3 lg:mb-10" id="projects">
+            <div className="py-3 lg:mb-10 text-black" id="projects">
               <h2 className=" text-4xl text-center py-3">Projects</h2>
               <div className="flex justify-center align-center flex-col gap-10 items-center sm:flex-row">
                 <a
