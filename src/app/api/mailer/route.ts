@@ -2,8 +2,8 @@
 import { NextResponse } from "next/server";
 import { ServerClient } from 'postmark';
 
-const EMAIL = process.env.EMAIL
-const POSTMARK_SERVER_TOKEN = process.env.POSTMARK_SERVER_TOKEN;
+const EMAIL = process.env.EMAIL || "";
+const POSTMARK_SERVER_TOKEN = process.env.POSTMARK_SERVER_TOKEN || "";
 const SUBJECT = 'New message from your website';
 
 export const POST = async (req: Request, res: Response) => {
