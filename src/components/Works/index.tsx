@@ -26,7 +26,7 @@ export default function index() {
     <div id="work" className="">
       <h2 className="text-center text-2xl mt-10 font-bold">Works</h2>
       {works.map((entry, index) => (
-        <div key={index} className="card bg-base-100 shadow-xl lg:mx-40 ">
+        <div key={index} className="card bg-base-100 shadow-xl">
           <div className="card-body">
             <div className="">
               <div className="p-4 bg-primary col-span-2">

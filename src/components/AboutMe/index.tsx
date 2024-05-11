@@ -4,7 +4,7 @@ export default function BrendenIntro() {
   return (
     <div id="about">
       <h2 className="mt-10 text-center text-2xl font-bold mb-3">Summary</h2>
-      <div className="flex content-center lg:mx-40">
+      <div className="flex content-center">
         <div className="mockup-code bg-base-200 p-4 rounded-box">
           <pre data-prefix="$" className="">
             Tell me about yourself

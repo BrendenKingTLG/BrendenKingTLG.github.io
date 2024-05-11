@@ -54,10 +54,7 @@ const WorkHistory = () => {
   ];
 
   return (
-    <div
-      className="flex flex-wrap justify-center items-start p-4 lg:mx-40"
-      id="history"
-    >
+    <div className="flex flex-wrap justify-center items-start p-4" id="history">
       <h2 className=" mt-10 text-center text-2xl font-bold mb-3">History</h2>
 
       {entries.map((entry, index) => (
