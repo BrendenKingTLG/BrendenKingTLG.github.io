@@ -36,7 +36,7 @@ export default function Index() {
   return (
     <div id="chat">
       <h2 className="mt-10 text-center text-2xl font-bold mb-3">Contact</h2>
-      <div className="lg:mx-60 border-2 mt-5 p-5 shadow-lg rounded-lg">
+      <div className="mx-10 lg:mx-60 border-2 mt-5 p-5 shadow-lg rounded-lg">
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2">
