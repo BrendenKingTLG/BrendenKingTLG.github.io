@@ -19,16 +19,17 @@ export default function SkillsChecklist() {
   };
 
   return (
-    <div id="skills">
+    <div id="skills" className="px-5">
+      <div className="divider"></div>
       <h2 className="text-center text-2xl mt-10 font-bold">Skills</h2>
-      <div className="card bg-black p-4 grid lg:grid-cols-3 gap-4">
+      <div className="card p-4 grid lg:grid-cols-3 gap-4">
         {Object.entries(skills).map(([category, items], idx) => (
-          <div key={idx} className="mb-4 bg-base-200 p-4 rounded-lg shadow-lg">
-            <h3 className="text-lg font-bold text-white mb-2">{category}</h3>
+          <div key={idx} className="mb-4 p-4 ">
+            <h3 className="text-lg font-bold  mb-2">{category}</h3>
             <div className="gap-2">
               {items.map((item, index) => (
                 <label className="label cursor-pointer" key={index}>
-                  <span className="label-text text-white">{item}</span>
+                  <span className="label-text ">{item}</span>
                   <input
                     type="checkbox"
                     className="checkbox checkbox-accent"

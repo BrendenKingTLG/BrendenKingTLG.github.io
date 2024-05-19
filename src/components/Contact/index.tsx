@@ -32,9 +32,10 @@ export default function Index() {
       setMessage("Failed to send email: " + error.message);
     }
   };
-
   return (
     <div id="chat">
+      <div className="divider"></div>
+
       <h2 className="mt-10 text-center text-2xl font-bold mb-3">Contact</h2>
       <div className="mx-10 lg:mx-60 border-2 mt-5 p-5 shadow-lg rounded-lg">
         <form onSubmit={handleSubmit}>
@@ -43,12 +44,13 @@ export default function Index() {
               Email:
             </label>
             <input
-              type="text"
+              type="email"
               name="from"
               value={formData.from}
               onChange={handleChange}
               className="input input-bordered w-full"
               placeholder="Your email address"
+              required
             />
           </div>
           <div className="mb-6">
@@ -61,13 +63,16 @@ export default function Index() {
               onChange={handleChange}
               className="textarea textarea-bordered w-full min-h-[120px]"
               placeholder="Write your message here"
+              required
             ></textarea>
           </div>
-          <button type="submit" className="btn btn-primary w-full">
+          <button type="submit" className="btn btn-primary w-full text-white">
             Send Email
           </button>
         </form>
-        {message && <p className="mt-4">{message}</p>}
+        {message && (
+          <p className="mt-4 text-center text-green-500">{message}</p>
+        )}
       </div>
     </div>
   );

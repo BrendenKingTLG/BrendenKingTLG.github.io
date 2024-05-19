@@ -1,4 +1,3 @@
-import { link } from "fs";
 import React from "react";
 
 const works = [
@@ -21,30 +20,30 @@ const works = [
   },
 ];
 
-export default function index() {
+export default function Work() {
   return (
-    <div id="work" className="">
-      <h2 className="text-center text-2xl mt-10 font-bold">Works</h2>
-      {works.map((entry, index) => (
-        <div key={index} className="card bg-base-100 shadow-xl">
-          <div className="card-body">
-            <div className="">
-              <div className="p-4 bg-primary col-span-2">
-                <h2 className="card-title">{entry.title}</h2>
-                <br />
-                <p>{entry.description}</p>
-                <br />
-                <a
-                  href={entry.link}
-                  className="text-blue-500 block break-words w-5/6"
-                >
-                  {entry.link}
-                </a>
-              </div>
+    <div id="work" className="px-5">
+      <div className="divider"></div>
+
+      <h2 className="text-center text-3xl mt-10 font-bold mb-6">Works</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {works.map((entry, index) => (
+          <div key={index} className="card bg-base-100 shadow-xl">
+            <div className="card-body">
+              <h2 className="card-title text-primary">{entry.title}</h2>
+              <p className="text-gray-600 mt-2">{entry.description}</p>
+              <a
+                href={entry.link}
+                className="text-blue-500 mt-4 block underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {entry.link}
+              </a>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
