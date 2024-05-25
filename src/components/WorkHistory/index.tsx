@@ -70,7 +70,7 @@ const WorkHistory = () => {
                   <h3 className="card-title text-lg font-bold">
                     {entry.title} at {entry.company}
                   </h3>
-                  <ul className="list-disc space-y-2 pl-5 mt-2 text-gray-700">
+                  <ul className="list-disc space-y-2 pl-5 mt-2">
                     {entry.details.map((detail, idx) => (
                       <li key={idx}>{detail}</li>
                     ))}
@@ -80,8 +80,8 @@ const WorkHistory = () => {
                   <div className="text-primary font-bold text-xl">
                     {entry.stats.main}
                   </div>
-                  <div className="text-gray-600">{entry.stats.description}</div>
-                  <div className="text-gray-500">Since {entry.period}</div>
+                  <div className="">{entry.stats.description}</div>
+                  <div className="">Since {entry.period}</div>
                 </div>
               </div>
             </div>

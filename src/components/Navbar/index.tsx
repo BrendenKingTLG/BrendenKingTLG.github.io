@@ -52,7 +52,7 @@ const MobileNav = () => {
       {showMenu && (
         <SideMenu show={showMenu} onClose={() => setShowMenu(false)} />
       )}
-      <div className="navbar bg-secondary">
+      <div className="navbar bg-primary">
         <div className="flex-none">
           <button
             className="btn btn-square btn-ghost"

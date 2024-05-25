@@ -32,7 +32,7 @@ export default function SkillsChecklist() {
                   <span className="label-text ">{item}</span>
                   <input
                     type="checkbox"
-                    className="checkbox checkbox-accent"
+                    className="checkbox checkbox-primary"
                     checked
                   />
                 </label>
