@@ -32,7 +32,7 @@ const works = [
     title: "Web Dev Portfolio",
     description:
       "Frontend Application for a bookstore. Built with React and TailwindCSS.",
-    link: "https://gitlab.com/passionprojects/bookstore",
+    link: "https://brendenkingtlg.github.io/portfolio-frontend/#/",
     image: "/webport.png",
     badges: [<SiReact key={"React"} />, <SiTailwindcss key={"Tailwind"} />],
   },
