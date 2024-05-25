@@ -6,7 +6,10 @@ import {
   SiJavascript,
   SiSwift,
   SiTailwindcss,
+  SiVuedotjs,
+  SiMysql,
 } from "react-icons/si";
+import { FaJava } from "react-icons/fa6";
 
 const works = [
   {
@@ -36,7 +39,28 @@ const works = [
     image: "/webport.png",
     badges: [<SiReact key={"React"} />, <SiTailwindcss key={"Tailwind"} />],
   },
+  {
+    title: "Bookstore",
+    description:
+      "Full stack bookstore application built with Vue, Java, and PostgreSQL.",
+    link: "https://gitlab.com/passionprojects/bookstore",
+    image: "/bookstore.PNG",
+    badges: [
+      <SiVuedotjs key={"Vue"} />,
+      <FaJava key={"Java"} />,
+      <SiMysql key={"MySQL"} />,
+    ],
+  },
 ];
+
+function getRandomColor() {
+  const letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
 
 export default function Work() {
   return (
@@ -46,12 +70,16 @@ export default function Work() {
       <h2 className="text-center text-3xl mt-10 font-bold mb-6">Works</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {works.map((entry, index) => (
-          <div key={index} className="card bg-base-100 shadow-xl">
-            <div className="card-body">
+          <div
+            key={index}
+            className="card bg-base-100 shadow-xl h-full"
+            style={{ minHeight: "400px" }} // Set a fixed minimum height for the cards
+          >
+            <div className="card-body flex flex-col">
               <h2 className="card-title w-full justify-center text-2xl pb-3">
                 {entry.title}
               </h2>
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center flex-grow">
                 <a
                   href={entry.link}
                   className="text-blue-500 mt-4 block underline"
@@ -63,6 +91,7 @@ export default function Work() {
                     alt={entry.title}
                     width={150}
                     height={150}
+                    className="object-contain"
                   />
                 </a>
               </div>
@@ -71,7 +100,8 @@ export default function Work() {
                 {entry.badges.map((badge, idx) => (
                   <div
                     key={idx}
-                    className="badge rounded-md flex gap-2 bg-slate-600"
+                    className="badge rounded-md flex gap-2"
+                    style={{ backgroundColor: getRandomColor() }}
                   >
                     {badge}
                     {badge.key}
