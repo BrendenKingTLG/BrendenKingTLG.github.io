@@ -89,9 +89,10 @@ export default function Work() {
                   <Image
                     src={entry.image}
                     alt={entry.title}
-                    width={150}
-                    height={150}
-                    className="object-contain"
+                    width="0"
+                    height="0"
+                    sizes="100vw"
+                    className="w-full h-auto"
                   />
                 </a>
               </div>

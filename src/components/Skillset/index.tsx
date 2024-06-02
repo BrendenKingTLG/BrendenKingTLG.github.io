@@ -34,6 +34,7 @@ export default function SkillsChecklist() {
                     type="checkbox"
                     className="checkbox checkbox-primary"
                     checked
+                    readOnly
                   />
                 </label>
               ))}
