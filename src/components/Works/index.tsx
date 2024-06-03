@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import {
   SiPostgresql,
   SiReact,
@@ -10,6 +9,7 @@ import {
   SiMysql,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa6";
+// import "./yourStyles.css"; // Ensure this is the path to your CSS file
 
 const works = [
   {
@@ -66,37 +66,18 @@ export default function Work() {
   return (
     <div id="work" className="px-5">
       <div className="divider"></div>
-
       <h2 className="text-center text-3xl mt-10 font-bold mb-6">Works</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {works.map((entry, index) => (
-          <div
-            key={index}
-            className="card bg-base-100 shadow-xl h-full"
-            style={{ minHeight: "400px" }} // Set a fixed minimum height for the cards
-          >
-            <div className="card-body flex flex-col">
-              <h2 className="card-title w-full justify-center text-2xl pb-3">
-                {entry.title}
-              </h2>
-              <div className="flex items-center justify-center flex-grow">
-                <a
-                  href={entry.link}
-                  className="text-blue-500 mt-4 block underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src={entry.image}
-                    alt={entry.title}
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="w-full h-auto"
-                  />
-                </a>
-              </div>
-              <p className="mt-2 pb-2">{entry.description}</p>
+          <div key={index} className="card shadow-xl">
+            <a
+              href={entry.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card-body flex flex-col justify-end"
+            >
+              <h2 className="card-title w-full text-2xl pb-3">{entry.title}</h2>
+              <p className="card-description mt-2 pb-3">{entry.description}</p>
               <div className="flex gap-2 flex-wrap">
                 {entry.badges.map((badge, idx) => (
                   <div
@@ -109,7 +90,7 @@ export default function Work() {
                   </div>
                 ))}
               </div>
-            </div>
+            </a>
           </div>
         ))}
       </div>
