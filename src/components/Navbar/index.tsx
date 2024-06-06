@@ -67,7 +67,7 @@ const Index: React.FC<Props> = ({ content }) => {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <ul className="menu p-4 w-80 min-h-full bg-base-200">
+          <ul className="menu p-4 pt-20 w-40 min-h-full bg-base-200">
             {pages.map((page, idx) => (
               <li key={idx} className="mb-2 last:mb-0">
                 <Link href={page.location}>{page.name}</Link>
