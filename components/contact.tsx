@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
 
 interface ContactFormProps {
   isOpen: boolean;

@@ -46,7 +46,7 @@ export default function Work() {
       <div className="py-5 bg-black" id="projects">
         <div className="px-5 md:px-10 lg:px-28 mx-auto py-10 flex flex-col lg:flex-row justify-between items-center">
           <h1 className="scroll-m-20 text-3xl md:text-4xl font-extrabold tracking-tight lg:text-5xl">
-            Projects I've Worked On
+            Projects Ive Worked On
           </h1>
           <TriangleRight
             size={40}

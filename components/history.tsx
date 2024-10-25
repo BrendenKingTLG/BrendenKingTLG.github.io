@@ -84,16 +84,12 @@ export default function ProjectGallery() {
           }}
         />
       </div>
-      {isMobile ? (
-        <MobileView entries={entries} />
-      ) : (
-        <DesktopView entries={entries} />
-      )}
+      {isMobile ? <MobileView /> : <DesktopView entries={entries} />}
     </>
   );
 }
 
-function MobileView({ entries: any }: { entries: any }) {
+function MobileView() {
   return (
     <div className="flex flex-col max-h-fit bg-black px-6 md:px-28 py-10 space-y-8">
       {entries.map((entry: any, index: any) => (

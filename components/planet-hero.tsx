@@ -1,7 +1,6 @@
 import { Separator } from "@radix-ui/react-separator";
-import SpinningPlanet from "./planet-spinning";
 import { Button } from "./ui/button";
-import { ChevronDown, ChevronsDown, Pointer } from "lucide-react";
+import { ChevronsDown } from "lucide-react";
 import Link from "next/link";
 
 export default function PlanetHero() {
