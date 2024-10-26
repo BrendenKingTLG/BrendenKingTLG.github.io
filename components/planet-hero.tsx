@@ -15,6 +15,7 @@ export default function PlanetHero() {
           autoPlay
           loop
           muted
+          playsInline
         />
 
         <div className="relative z-10 flex justify-center items-center h-full">
