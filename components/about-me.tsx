@@ -42,7 +42,7 @@ export default function AboutMe() {
           Below are some of the technical skills I have experience with:
         </p>
 
-        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-8">
+        <div className="grid gap-8 grid-cols-2 lg:grid-cols-3 mt-8">
           {skills.map((skill) => (
             <div
               key={skill.name}
